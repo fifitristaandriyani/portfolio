@@ -2,25 +2,25 @@
 const ROUTING_VARIABLES = {
     links: {
         linkedin: "https://linkedin.com/in/fifi-trista-andriyani",
-        instagram: "https://instagram.com/fifitrista",
-        email: "mailto:fifi.trista@example.com",
-        whatsapp: "https://wa.me/6281234567890"
+        instagram: "https://instagram.com/fifi_trista",
+        email: "mailto:fifitristaa04@gmail.com",
+        whatsapp: "https://wa.me/6287736397291"
     },
     certificates: [
-        { title: "Enterprise Risk Management Optimization", year: "2025", path: "assets/images/certificates/cert-1.jpg" },
-        { title: "Total Productive Maintenance Operations Specialist", year: "2025", path: "assets/images/certificates/cert-2.jpg" },
-        { title: "Advanced Looker Studio Data Engineering", year: "2024", path: "assets/images/certificates/cert-3.jpg" },
-        { title: "Lean Manufacturing Six Sigma Foundations", year: "2024", path: "assets/images/certificates/cert-4.jpg" },
-        { title: "Statistical Process Control & Minitab Modeling", year: "2024", path: "assets/images/certificates/cert-5.jpg" },
-        { title: "Product Design Development Practicum Certification", year: "2023", path: "assets/images/certificates/cert-6.jpg" },
-        { title: "Industrial Plant Simulation Systems", year: "2023", path: "assets/images/certificates/cert-7.jpg" },
-        { title: "TOEFL ITP High-Proficiency Attainment Certificate", year: "2023", path: "assets/images/certificates/cert-8.jpg" }
+        { title: "OD and TA Intern Completion", year: "2025", path: "assets/images/certificates/cert-1.jpg" },
+        { title: "Project Control Intern Completion", year: "2025", path: "assets/images/certificates/cert-2.jpg" },
+        { title: "Laboratory Assistant Product Design and Development", year: "2024", path: "assets/images/certificates/cert-3.jpg" },
+        { title: "Assistant Lecturer Product Design and Development", year: "2024", path: "assets/images/certificates/cert-4.jpg" },
+        { title: "Assistant Lecturer Engineering Material", year: "2023", path: "assets/images/certificates/cert-5.jpg" },
+        { title: "Data Analytic in Power BI Course Completion", year: "2025", path: "assets/images/certificates/cert-6.jpg" },
+        { title: "Project Management Course Completion", year: "2025", path: "assets/images/certificates/cert-7.jpg" },
+        { title: "Digital Marketing Course Completion", year: "2024", path: "assets/images/certificates/cert-8.jpg" }
     ],
     achievements: [
-        { id: "ach1", title: "TOEFL ITP 573", group: "Official Score", text: "Verified professional English communication proficiency with an official authenticated institutional TOEFL ITP score of 573.", path: "assets/images/certificates/cert-8.jpg" },
-        { id: "ach2", title: "Top 10 Product Design Competition TI USU 2024", group: "National Placement", text: "Ranked within the elite Top 10 national finalists during the flagship Product Design Competition hosted by Universitas Sumatera Utara (TI USU) in 2024.", path: "assets/images/certificates/cert-6.jpg" },
-        { id: "ach3", title: "Top 4 Industrial Simulation Competition 2023", group: "Operations Elite", text: "Placed within the Top 4 elite ranking tier nationwide in the high-stakes Industrial Simulation Competition and Event 2023, configuring processing bottlenecks under strict variables.", path: "assets/images/certificates/cert-7.jpg" },
-        { id: "ach4", title: "2nd Place Product Design Expo INDEX UGM 2022", group: "Exhibition Winner", text: "Awarded 2nd Place out of large competitive development teams during the Product Design Project and Expo INDEX UGM in 2022.", path: "assets/images/certificates/cert-1.jpg" }
+        { id: "ach1", title: "TOEFL ITP 573", group: "Official Score", text: "English communication proficiency with an official authenticated institutional TOEFL ITP score of 573.", path: "assets/images/certificates/cert-8.jpg" },
+        { id: "ach2", title: "Top 10 Product Design Competition TI USU 2024", group: "National Placement", text: "Achieved Top 10 finalist placement in the Product Design Competition held by Universitas Sumatera Utara (TI USU) in 2024.", path: "assets/images/certificates/cert-6.jpg" },
+        { id: "ach3", title: "Top 4 Industrial Simulation Competition 2023", group: "National Placement", text: "Achieved Top 4 placement in the Industrial Simulation Competition 2023 by demonstrating analytical and problem-solving skills in manufacturing system simulations.", path: "assets/images/certificates/cert-7.jpg" },
+        { id: "ach4", title: "2nd Place Product Design Expo INDEX UGM 2022", group: "Project and Exhibition Winner", text: "Awarded 2nd Place in the Product Design Project and Expo INDEX UGM 2022 for developing an innovative product design solution.", path: "assets/images/certificates/cert-1.jpg" }
     ]
 };
 
@@ -28,67 +28,61 @@ const projectDatabase = {
     'proj1': {
         title: "KPI Performance & Cost Management System",
         context: "The plant manufacturing space required a standardized approach to manage operational indicators and evaluate cost drivers directly against financial performance logs.",
-        role: "Performance Management and Analysis Sr. Staff at Kalbe Nutritionals. I assumed full ownership for the dashboard modeling and tracking logic.",
         contributions: [
             "Developed and maintained integrated plant performance dashboards using Looker Studio and Microsoft Excel.",
-            "Built centralized project tracking dashboards to monitor continuous improvement initiatives and log weekly action plan progress.",
-            "Conducted comprehensive performance gap analysis to map specific plant operational losses, recurring process challenges, and financial cost drivers.",
-            "Maintained plant cost databases and performed data correlation checks between ongoing manufacturing performance and overall site cost outputs.",
-            "Developed advanced KPI simulation models utilizing Causal Loop Diagrams (CLD) to track metrics interactions."
+            "Built project tracking dashboards to monitor improvement initiatives and action plan progress.",
+            "Conducted performance gap analysis to identify operational losses, recurring issues, and cost drivers.",
+            "Developed and Maintained plant cost databases and analyzed relationships between operational performance and cost outcomes.",
+            "Developed Causal Loop Diagram (CLD) simulations to understand KPI interactions and support improvement planning."
         ],
-        outcomes: "Centralized disparate site operational data tracking sheets, reducing metric compilation delays and providing management with a single point of reference for live production efficiency metrics.",
+        outcomes: "Cost Performance Dashboard (Looker Studio), KPI Monitoring Dashboard, Project Tracking Dashboard, KPI Simulation Model (CLD)",
         tools: ["Performance Management", "Cost Analysis", "Gap Analysis", "Looker Studio", "Microsoft Excel", "KPI Simulation"],
         images: ["assets/images/projects/project-1-1.jpg", "assets/images/projects/project-1-2.jpg"]
     },
     'proj2': {
         title: "AI-Enabled Performance Dashboard Development",
         context: "The organization launched an initiative to deploy an advanced performance dashboard driven by automation to simplify traditional manufacturing reporting models.",
-        role: "Operational Support Staff. I acted as the primary analytical bridge coordinating between plant operations teams and development engineers.",
         contributions: [
-            "Prepared, cleaned, and structured production operational datasets according to master dashboard data engineering requirements.",
+            " Prepared and structured datasets according to dashboard requirements.",
             "Supported the formal development cycles for Business Requirement Documents (BRD) and Functional Specification Documents (FSD).",
-            "Validated incoming plant data quality, assessed logging consistency, and calculated final reporting model accuracy parameters.",
-            "Collaborated closely with Data Analysts and AI Developers during live dashboard prototyping and functional verification sprints.",
-            "Supported end-user acceptance testing (UAT) and post-deployment dashboard refinement activities."
+            "Validated data quality, consistency, and reporting accuracy.",
+            "Collaborated with Data Analysts and AI Developers during dashboard development and testing.",
+            "Supported user acceptance and dashboard refinement activities."
         ],
-        outcomes: "Delivered highly accurate data definitions and specification parameters to the technical engineering team, preventing calculation errors prior to release.",
-        tools: ["Business Analysis", "Data Validation", "Requirement Gathering", "Dashboard Development", "Cross-Functional Collaboration"],
+        outcomes: "Delivered Business Requirement Document (BRD), Functional Specification Document (FSD), Validated Operational Dataset, Dashboard Testing & Validation Reports, User Acceptance Testing (UAT).",
+        tools: ["Business Analysis", "Data Validation", "Dashboard Development", "Cross-Functional Collaboration"],
         images: ["assets/images/projects/project-2-1.jpg", "assets/images/projects/project-2-2.jpg"]
     },
     'proj3': {
         title: "Smart Changeover & Autonomous Response System",
         context: "High manufacturing line downtime and extended tool changeover cycles created production constraints requiring a structured Total Productive Maintenance (TPM) strategy.",
-        role: "Industrial Engineering Project Leader. I developed a comprehensive proposal targeting specific machine efficiency factors.",
         contributions: [
-            "Developed practical improvement concepts under the Focused Improvement (FI) framework pillar to support site continuous improvement practices.",
-            "Utilized empirical manufacturing process data records to isolate line losses, address bottlenecks, and discover processing opportunities.",
-            "Supported Autonomous Maintenance (AM) setups by collecting operational floor metrics and identifying hardware anomalies.",
-            "Presented complete improvement proposals, action plans, and execution steps directly during scheduled plant TPM review activities.",
-            "Integrated technical, operational, and staff coordination elements into a single deployment framework."
+            "Developed improvement concepts under the Focused Improvement (FI) pillar to strengthen problem-solving and continuous improvement practices.",
+            "Utilized manufacturing process data to identify losses, bottlenecks, and improvement opportunities.",
+            "Supported Autonomous Maintenance (AM) initiatives through operational data collection and issue identification.",
+            "Presented improvement proposals and implementation strategies during TPM review activities.",
+            "Integrated technical, operational, and people management aspects into a single improvement framework."
         ],
-        outcomes: "Provided plant operations with an actionable execution blueprint that established standard changeover sequences, helping reduce line switch times.",
+        outcomes: "Loss & Bottleneck Identification Framework, Implementation Roadmap & Action Plan, TPM Project Presentation Materials",
         tools: ["TPM", "Continuous Improvement", "Root Cause Analysis", "Problem Solving", "Project Management"],
         images: ["assets/images/projects/project-3-1.jpg", "assets/images/projects/project-3-2.jpg"]
     },
     'proj4': {
         title: "Enterprise Risk Management (ERM)",
-        context: "Plant leadership required a systematic method to map business vulnerabilities, identify regulatory compliance targets, and structure business continuity blueprints.",
-        role: "Risk Management and Internal Audit Support Staff. I led data gathering and risk alignment operations across factory divisions.",
+        context: "Supported plant-level Enterprise Risk Management implementation through risk identification, assessment activities, training participation, and audit support.",
         contributions: [
             "Completed formalized plant-level corporate Enterprise Risk Management training blueprints.",
-            "Facilitated risk identification workshops and structured hazard assessment operations across active plant divisions.",
             "Supported technical risk documentation steps and coordinated departmental preventive action mapping.",
             "Participated directly in formal internal risk audit operations and structured compliance reviews.",
             "Monitored the implementation of risk treatment plans to ensure adherence to corporate safety standards."
         ],
-        outcomes: "Centralized separate process liabilities into an actionable site risk registry, increasing audit preparedness and mitigating core operational safety risks.",
+        outcomes: "Risk Register Documentation, Risk Assessment Matrix, Risk Mitigation Action Plans, Internal Audit Support Documentation, Risk Monitoring & Follow-up Reports.",
         tools: ["Risk Management", "Internal Audit", "Risk Assessment", "Compliance Management"],
         images: ["assets/images/projects/project-4-1.jpg", "assets/images/projects/project-4-2.jpg"]
     },
     'proj5': {
         title: "Pandawa Continuous Improvement Challenge",
-        context: "The facility required an engaging framework to maximize operator suggestions, optimize documentation practices, and expand continuous improvement efforts.",
-        role: "Program Creator and Operations Manager. I designed the tracking tables, engagement metrics, and evaluation rules.",
+        context: "Designed and managed a plant-wide Continuous Improvement engagement program aimed at strengthening improvement culture through performance-based challenges, KPI simulations, knowledge-sharing activities, and structured recognition systems.",
         contributions: [
             "Developed the master program framework, scoring rules, and performance assessment criteria for individual and group contributions.",
             "Created data-driven KPI and System Flow Diagram (SFD) simulations to help plant floor teams understand performance targets.",
@@ -97,7 +91,7 @@ const projectDatabase = {
             "Managed employee engagement initiatives using the program's official WhatsApp Channel to increase active suggestions.",
             "Coordinated the final execution logistics for the annual corporate recognition and awarding ceremonies."
         ],
-        outcomes: "Drove engagement across plant lines, boosting bottom-up continuous improvement suggestions and surfacing hidden material waste leaks.",
+        outcomes: "CI Scoring System, Assessment Criteria Framework, KPI & SFD Simulation Materials, Monthly Trivia Program, Annual Awarding System, Employee Engagement Dashboard.",
         tools: ["Continuous Improvement", "Program Development", "Employee Engagement", "Performance Measurement", "Internal Communication", "Change Management"],
         images: ["assets/images/projects/project-5-1.jpg", "assets/images/projects/project-5-2.jpg"]
     }
@@ -159,7 +153,6 @@ function openEngineModal(type, targetId) {
 
         document.getElementById('pm-title').innerText = data.title;
         document.getElementById('pm-context').innerText = data.context;
-        document.getElementById('pm-role').innerText = data.role;
         document.getElementById('pm-outcomes').innerText = data.outcomes;
 
         const contributionsUl = document.getElementById('pm-contributions');
