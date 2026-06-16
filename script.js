@@ -167,6 +167,14 @@ const activityDatabase = {
         ],
         skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
         image: "assets/images/activities/activity-5.jpg"
+    },
+    'act6': {
+        title: "Employee Engagement & Training Programs",
+        purpose: "Support employee engagement and employee development initiatives through structured programs and training activities.",
+        role: "Coordinated employee engagement events, supported training administration, communicated program information to participants, and assisted in ensuring smooth execution of activities.",
+        ],
+        skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
+        image: "assets/images/activities/activity-6.jpg"
     }
 };
 
