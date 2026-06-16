@@ -234,7 +234,7 @@ function openEngineModal(type, targetId) {
 
         const respUl = document.getElementById('am-responsibilities');
         respUl.innerHTML = '';
-        data.responsibilities.forEach(item => {
+        (data.responsibilities || []).forEach(item => {
             const li = document.createElement('li');
             li.innerText = item;
             respUl.appendChild(li);
