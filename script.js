@@ -51,7 +51,7 @@ const projectDatabase = {
         ],
         outcomes: "Delivered Business Requirement Document (BRD), Functional Specification Document (FSD), Validated Operational Dataset, Dashboard Testing & Validation Reports, User Acceptance Testing (UAT).",
         tools: ["Business Analysis", "Data Validation", "Dashboard Development", "Cross-Functional Collaboration"],
-        images: ["assets/images/projects/project-2-1.jpg", "assets/images/projects/project-2-2.jpg"]
+        images: ["assets/images/projects/project-2-1.jpeg", "assets/images/projects/project-2-2.jpg"]
     },
     'proj3': {
         title: "Smart Changeover & Autonomous Response System",
