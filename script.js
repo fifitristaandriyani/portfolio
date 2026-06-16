@@ -108,12 +108,6 @@ const activityDatabase = {
         title: "Daily Management System (DMS)",
         purpose: "Facilitate routine performance monitoring and issue escalation to ensure timely corrective actions.",
         role: "Acted as moderator and coordinator during DMS sessions, facilitated discussions, documented key issues, and followed up action plans with related departments.",
-        responsibilities: [
-            "Moderated daily operational stand-up performance reviews directly on the manufacturing floor.",
-            "Coordinated data updates with department heads to prevent operational blind spots.",
-            "Followed up on action items to make sure process bottlenecks were addressed quickly.",
-            "Logged recurring shift issues to support long-term trend analysis."
-        ],
         skills: ["Facilitation", "Problem Solving", "Issue Management", "Stakeholder Coordination"],
         image: "assets/images/activities/activity-1.jpg"
     },
@@ -121,12 +115,6 @@ const activityDatabase = {
         title: "Monthly Operating Review (MOR)",
         purpose: "Review monthly KPI achievement, operational performance, and improvement progress across departments.",
         role: "Prepared performance reports, served as moderator and presenter for the division, and monitored follow-up actions from management discussions.",
-        responsibilities: [
-            "Compiled detailed monthly plant metrics files and operational performance review decks.",
-            "Served as the key division presenter during monthly operational review meetings.",
-            "Monitored follow-up task progress items assigned by senior plant leadership.",
-            "Analyzed monthly efficiency losses to suggest immediate corrective steps."
-        ],
         skills: ["Performance Analysis", "Executive Reporting", "Presentation Skills", "KPI Management"],
         image: "assets/images/activities/activity-2.jpg"
     },
@@ -134,12 +122,6 @@ const activityDatabase = {
         title: "Yearly Operating Review (YOR)",
         purpose: "Evaluate annual business performance and align improvement priorities and operational plans for the following year.",
         role: "Compiled annual performance summaries, facilitated review discussions, documented key decisions, and supported future planning alignment.",
-        responsibilities: [
-            "Assembled end-of-year plant performance data summaries and throughput variation charts.",
-            "Facilitated structured review workshops to help align targets across teams.",
-            "Documented high-level decision histories and recorded next-year operational priorities.",
-            "Supported department managers in checking capacity limits against corporate goals."
-        ],
         skills: ["Strategic Planning", "Business Review", "Reporting", "Stakeholder Management"],
         image: "assets/images/activities/activity-3.jpg"
     },
@@ -147,12 +129,6 @@ const activityDatabase = {
         title: "Gemba Observation & Improvement Program",
         purpose: "Capture bottom-up insights from shopfloor operations to identify recurring issues and improvement opportunities.",
         role: "Conducted operator interviews, gathered operational observations, analyzed findings, and proposed improvement interventions based on identified patterns.",
-        responsibilities: [
-            "Conducted direct observations on production lines to analyze material handling constraints.",
-            "Interviewed floor staff to capture valuable context regarding daily machine operations.",
-            "Analyzed operational findings to discover underlying bottleneck patterns.",
-            "Proposed visual controls and layout improvements to reduce process step waste."
-        ],
         skills: ["Root Cause Analysis", "Operational Analysis", "Communication", "Continuous Improvement"],
         image: "assets/images/activities/activity-4.jpg"
     },
@@ -160,11 +136,6 @@ const activityDatabase = {
         title: "TPM Quick Win Activities",
         purpose: "Drive TPM implementation through practical improvement initiatives and measurable operational improvements.",
         role: "Monitored project progress, presented improvement outcomes, and coordinated implementation follow-ups with pipeline teams.",
-        responsibilities: [
-            "Monitored progress milestones for on-site machinery improvement projects.",
-            "Coordinated data updates across cross-functional maintenance staff and operators.",
-            "Presented complete project outcome metrics during internal operations assessments."
-        ],
         skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
         image: "assets/images/activities/activity-5.jpg"
     },
@@ -172,11 +143,6 @@ const activityDatabase = {
         title: "Employee Engagement & Training Programs",
         purpose: "Support employee engagement and employee development initiatives through structured programs and training activities.",
         role: "Coordinated employee engagement events, supported training administration, communicated program information to participants, and assisted in ensuring smooth execution of activities.",
-        responsibilities: [
-            "Monitored progress milestones for on-site machinery improvement projects.",
-            "Coordinated data updates across cross-functional maintenance staff and operators.",
-            "Presented complete project outcome metrics during internal operations assessments."
-        ],
         skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
         image: "assets/images/activities/activity-6.jpg"
     }
@@ -237,13 +203,7 @@ function openEngineModal(type, targetId) {
         document.getElementById('am-role').innerText = data.role;
         document.getElementById('am-hero-img').style.backgroundImage = `url('${data.image}')`;
 
-        const respUl = document.getElementById('am-responsibilities');
-        respUl.innerHTML = '';
-        (data.responsibilities || []).forEach(item => {
-            const li = document.createElement('li');
-            li.innerText = item;
-            respUl.appendChild(li);
-        });
+        );
 
         const skillsDiv = document.getElementById('am-skills');
         skillsDiv.innerHTML = '';
