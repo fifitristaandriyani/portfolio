@@ -17,10 +17,10 @@ const ROUTING_VARIABLES = {
         { title: "Digital Marketing Course Completion", year: "2024", path: "assets/images/certificates/cert-8.jpg" }
     ],
     achievements: [
-        { id: "ach1", title: "TOEFL ITP 573", group: "Official Score", text: "English communication proficiency with an official authenticated institutional TOEFL ITP score of 573.", path: "assets/images/certificates/cert-8.jpg" },
-        { id: "ach2", title: "Top 10 Product Design Competition TI USU 2024", group: "National Placement", text: "Achieved Top 10 finalist placement in the Product Design Competition held by Universitas Sumatera Utara (TI USU) in 2024.", path: "assets/images/certificates/cert-6.jpg" },
-        { id: "ach3", title: "Top 4 Industrial Simulation Competition 2023", group: "National Placement", text: "Achieved Top 4 placement in the Industrial Simulation Competition 2023 by demonstrating analytical and problem-solving skills in manufacturing system simulations.", path: "assets/images/certificates/cert-7.jpg" },
-        { id: "ach4", title: "2nd Place Product Design Expo INDEX UGM 2022", group: "Project and Exhibition Winner", text: "Awarded 2nd Place in the Product Design Project and Expo INDEX UGM 2022 for developing an innovative product design solution.", path: "assets/images/certificates/cert-1.jpg" }
+        { id: "ach1", title: "TOEFL ITP 573", group: "Official Score", text: "English communication proficiency with an official authenticated institutional TOEFL ITP score of 573.", path: "assets/images/certificates/cert-9.jpg" },
+        { id: "ach2", title: "Top 10 Product Design Competition TI USU 2024", group: "National Placement", text: "Achieved Top 10 finalist placement in the Product Design Competition held by Universitas Sumatera Utara (TI USU) in 2024.", path: "assets/images/certificates/cert-10.jpg" },
+        { id: "ach3", title: "Top 4 Industrial Simulation Competition 2023", group: "National Placement", text: "Achieved Top 4 placement in the Industrial Simulation Competition 2023 by demonstrating analytical and problem-solving skills in manufacturing system simulations.", path: "assets/images/certificates/cert-11.jpg" },
+        { id: "ach4", title: "2nd Place Product Design Expo INDEX UGM 2022", group: "Project and Exhibition Winner", text: "Awarded 2nd Place in the Product Design Project and Expo INDEX UGM 2022 for developing an innovative product design solution.", path: "assets/images/certificates/cert-12.jpg" }
     ]
 };
 
