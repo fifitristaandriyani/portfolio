@@ -203,8 +203,6 @@ function openEngineModal(type, targetId) {
         document.getElementById('am-role').innerText = data.role;
         document.getElementById('am-hero-img').style.backgroundImage = `url('${data.image}')`;
 
-        );
-
         const skillsDiv = document.getElementById('am-skills');
         skillsDiv.innerHTML = '';
         data.skills.forEach(skill => {
