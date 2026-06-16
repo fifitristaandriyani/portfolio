@@ -172,6 +172,11 @@ const activityDatabase = {
         title: "Employee Engagement & Training Programs",
         purpose: "Support employee engagement and employee development initiatives through structured programs and training activities.",
         role: "Coordinated employee engagement events, supported training administration, communicated program information to participants, and assisted in ensuring smooth execution of activities.",
+        responsibilities: [
+            "Monitored progress milestones for on-site machinery improvement projects.",
+            "Coordinated data updates across cross-functional maintenance staff and operators.",
+            "Presented complete project outcome metrics during internal operations assessments."
+        ],
         skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
         image: "assets/images/activities/activity-6.jpg"
     }
