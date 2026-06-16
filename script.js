@@ -103,35 +103,35 @@ const activityDatabase = {
         purpose: "Facilitate routine performance monitoring and issue escalation to ensure timely corrective actions.",
         role: "Acted as moderator and coordinator during DMS sessions, facilitated discussions, documented key issues, and followed up action plans with related departments.",
         skills: ["Facilitation", "Problem Solving", "Issue Management", "Stakeholder Coordination"],
-        image: "assets/images/activities/activity-1.jpg"
+        image: "assets/images/activities/activity-1.jpeg"
     },
     'act2': {
         title: "Monthly Operating Review (MOR)",
         purpose: "Review monthly KPI achievement, operational performance, and improvement progress across departments.",
         role: "Prepared performance reports, served as moderator and presenter for the division, and monitored follow-up actions from management discussions.",
         skills: ["Performance Analysis", "Executive Reporting", "Presentation Skills", "KPI Management"],
-        image: "assets/images/activities/activity-2.jpg"
+        image: "assets/images/activities/activity-2.jpeg"
     },
     'act3': {
         title: "Yearly Operating Review (YOR)",
         purpose: "Evaluate annual business performance and align improvement priorities and operational plans for the following year.",
         role: "Compiled annual performance summaries, facilitated review discussions, documented key decisions, and supported future planning alignment.",
         skills: ["Strategic Planning", "Business Review", "Reporting", "Stakeholder Management"],
-        image: "assets/images/activities/activity-3.jpg"
+        image: "assets/images/activities/activity-3.jpeg"
     },
     'act4': {
         title: "Gemba Observation & Improvement Program",
         purpose: "Capture bottom-up insights from shopfloor operations to identify recurring issues and improvement opportunities.",
         role: "Conducted operator interviews, gathered operational observations, analyzed findings, and proposed improvement interventions based on identified patterns.",
         skills: ["Root Cause Analysis", "Operational Analysis", "Communication", "Continuous Improvement"],
-        image: "assets/images/activities/activity-4.jpg"
+        image: "assets/images/activities/activity-4.jpeg"
     },
     'act5': {
         title: "TPM Quick Win Activities",
         purpose: "Drive TPM implementation through practical improvement initiatives and measurable operational improvements.",
         role: "Monitored project progress, presented improvement outcomes, and coordinated implementation follow-ups with pipeline teams.",
         skills: ["TPM", "Project Coordination", "Improvement Management", "Presentation Skills"],
-        image: "assets/images/activities/activity-5.jpg"
+        image: "assets/images/activities/activity-5.jpeg"
     },
     'act6': {
         title: "Employee Engagement & Training Programs",
