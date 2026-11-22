@@ -111,8 +111,9 @@ const projectDatabase = {
       "Data Analytics",
     ],
     images: [
-      "assets/images/projects/project-omega-1.jpg",
-      "assets/images/projects/project-omega-2.jpg",
+      "assets/images/projects/project-omega-1.png",
+      "assets/images/projects/project-omega-2.png",
+      "assets/images/projects/project-omega-3.png",
     ],
   },
   projCost: {
@@ -132,8 +133,8 @@ const projectDatabase = {
       "Performance Monitoring",
     ],
     images: [
-      "assets/images/projects/project-cost-1.jpg",
-      "assets/images/projects/project-cost-2.jpg",
+      "assets/images/projects/project-cost-1.png",
+      "assets/images/projects/project-cost-2.png",
     ],
   },
   projDynamics: {
