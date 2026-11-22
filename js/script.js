@@ -111,7 +111,7 @@ const projectDatabase = {
       "Data Analytics",
     ],
     images: [
-      "assets/images/projects/project-omega-thumb.png",
+      "assets/images/projects/project-omega-1.png",
       "assets/images/projects/project-omega-2.png",
       "assets/images/projects/project-omega-3.png",
     ],
@@ -174,8 +174,10 @@ const projectDatabase = {
       "Root Cause Analysis",
     ],
     images: [
-      "assets/images/projects/project-shpway-1.jpg",
-      "assets/images/projects/project-shpway-2.jpg",
+      "assets/images/projects/project-shpway-1.png",
+      "assets/images/projects/project-shpway-2.jpeg",
+      "assets/images/projects/project-shpway-3.png",
+      "assets/images/projects/project-shpway-4.png",
     ],
   },
   projErmPlant: {
