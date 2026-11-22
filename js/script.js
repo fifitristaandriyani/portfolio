@@ -154,8 +154,9 @@ const projectDatabase = {
       "Production System",
     ],
     images: [
-      "assets/images/projects/project-dynamics-1.jpg",
-      "assets/images/projects/project-dynamics-2.jpg",
+      "assets/images/projects/project-dynamics-1.png",
+      "assets/images/projects/project-dynamics-2.png",
+      "assets/images/projects/project-dynamics-3.jpeg",
     ],
   },
   projShpWay: {
