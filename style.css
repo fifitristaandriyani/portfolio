@@ -360,16 +360,25 @@ body {
 }
 
 .card-list li {
-  margin-bottom: 4px;
-  padding-left: 14px;
-  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  line-height: 1.45;
+}
+
+.card-list li:last-child {
+  margin-bottom: 0;
 }
 
 .card-list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 0.65rem;
   color: var(--accent-blue);
+  margin-top: 0.35em;
+  flex-shrink: 0;
 }
 
 .about-supporting-side {
@@ -483,6 +492,19 @@ body {
   background-position: center;
   transition: var(--transition-engine);
   border-bottom: 1px solid var(--glass-border);
+}
+
+.project-img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-img-placeholder i {
+  font-size: 2.4rem;
+  color: var(--text-muted);
+  opacity: 0.55;
 }
 
 .project-card:hover .project-img,

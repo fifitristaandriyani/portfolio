@@ -82,7 +82,7 @@ const ROUTING_VARIABLES = {
 
 const projectDatabase = {
   projOmega: {
-    title: "OMEGA — AI-Powered Plant Performance Intelligence",
+    title: "OMEGA - AI Powered Plant Performance Intelligence",
     contributions: [
       "Led QCC problem analysis, including fishbone analysis and improvement planning, to address inefficiencies in cost analysis.",
       "Defined analytical requirements, prepared cost datasets, and mapped business logic for AI development.",
@@ -125,8 +125,7 @@ const projectDatabase = {
     ],
   },
   projDynamics: {
-    title:
-      "System Dynamics Simulation for Production Capacity Optimization",
+    title: "System Dynamics Simulation for Production Capacity Optimization",
     contributions: [
       "Modeled operational relationships between production planning, capacity, manpower, overtime, and conversion cost.",
       "Simulated product grammage adjustments and recruitment scenarios to evaluate their operational impact.",
@@ -188,8 +187,7 @@ const projectDatabase = {
     ],
   },
   projPandawaAward: {
-    title:
-      "Pandawa Award — Kaizen Culture & Continuous Improvement Program",
+    title: "Pandawa Award — Kaizen Culture & Continuous Improvement Program",
     contributions: [
       "Developed program frameworks, scoring criteria, and facilitator routines to maintain improvement quality and consistency.",
       "Initiated engagement programs including Instagram Trivia, improvement quizzes, CG League, and dedicated improvement communication channels.",
