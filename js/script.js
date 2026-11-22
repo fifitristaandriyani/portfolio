@@ -194,8 +194,11 @@ const projectDatabase = {
       "Risk Mitigation",
     ],
     images: [
-      "assets/images/projects/project-erm-1.jpg",
-      "assets/images/projects/project-erm-2.jpg",
+      "assets/images/projects/project-4-1.jpg",
+      "assets/images/projects/project-4-2.jpg",
+      "assets/images/projects/project-erm-1.png",
+      "assets/images/projects/project-erm-2.png",
+      "assets/images/projects/project-erm-3.png",
     ],
   },
   projPandawaAward: {
@@ -219,96 +222,6 @@ const projectDatabase = {
       "assets/images/projects/project-5-1.jpg",
       "assets/images/projects/project-5-2.jpg",
       "assets/images/projects/project-5-thumb-2.jpeg",
-    ],
-  },
-  proj1: {
-    title: "KPI Performance & Cost Management System",
-    contributions: [
-      "Developed and maintained integrated plant performance dashboards using Looker Studio and Microsoft Excel.",
-      "Built project tracking dashboards to monitor improvement initiatives and action plan progress.",
-      "Conducted performance gap analysis to identify operational losses, recurring issues, and cost drivers.",
-      "Developed and Maintained plant cost databases and analyzed relationships between operational performance and cost outcomes.",
-      "Developed Causal Loop Diagram (CLD) simulations to understand KPI interactions and support improvement planning.",
-    ],
-    outcomes:
-      "Cost Performance Dashboard (Looker Studio), KPI Monitoring Dashboard, Project Tracking Dashboard, KPI Simulation Model (CLD)",
-    tools: [
-      "Performance Management",
-      "Cost Analysis",
-      "Gap Analysis",
-      "Looker Studio",
-      "Microsoft Excel",
-      "KPI Simulation",
-    ],
-    images: [
-      "assets/images/projects/project-1-1.jpg",
-      "assets/images/projects/project-1-2.jpg",
-    ],
-  },
-  proj2: {
-    title: "AI-Enabled Performance Dashboard Development",
-    contributions: [
-      " Prepared and structured datasets according to dashboard requirements.",
-      "Supported the formal development cycles for Business Requirement Documents (BRD) and Functional Specification Documents (FSD).",
-      "Validated data quality, consistency, and reporting accuracy.",
-      "Collaborated with Data Analysts and AI Developers during dashboard development and testing.",
-      "Supported user acceptance and dashboard refinement activities.",
-    ],
-    outcomes:
-      "Delivered Business Requirement Document (BRD), Functional Specification Document (FSD), Validated Operational Dataset, Dashboard Testing & Validation Reports, User Acceptance Testing (UAT).",
-    tools: [
-      "Business Analysis",
-      "Data Validation",
-      "Dashboard Development",
-      "Cross-Functional Collaboration",
-    ],
-    images: [
-      "assets/images/projects/project-2-1.jpeg",
-      "assets/images/projects/project-2-2.jpg",
-    ],
-  },
-  proj3: {
-    title: "Smart Changeover & Autonomous Response System",
-    contributions: [
-      "Developed improvement concepts under the Focused Improvement (FI) pillar to strengthen problem-solving and continuous improvement practices.",
-      "Utilized manufacturing process data to identify losses, bottlenecks, and improvement opportunities.",
-      "Supported Autonomous Maintenance (AM) initiatives through operational data collection and issue identification.",
-      "Presented improvement proposals and implementation strategies during TPM review activities.",
-      "Integrated technical, operational, and people management aspects into a single improvement framework.",
-    ],
-    outcomes:
-      "Loss & Bottleneck Identification Framework, Implementation Roadmap & Action Plan, TPM Project Presentation Materials",
-    tools: [
-      "TPM",
-      "Continuous Improvement",
-      "Root Cause Analysis",
-      "Problem Solving",
-      "Project Management",
-    ],
-    images: [
-      "assets/images/projects/project-3-1.jpg",
-      "assets/images/projects/project-3-2.jpg",
-    ],
-  },
-  proj4: {
-    title: "Enterprise Risk Management (ERM)",
-    contributions: [
-      "Completed formalized plant-level corporate Enterprise Risk Management training blueprints.",
-      "Supported technical risk documentation steps and coordinated departmental preventive action mapping.",
-      "Participated directly in formal internal risk audit operations and structured compliance reviews.",
-      "Monitored the implementation of risk treatment plans to ensure adherence to corporate safety standards.",
-    ],
-    outcomes:
-      "Risk Register Documentation, Risk Assessment Matrix, Risk Mitigation Action Plans, Internal Audit Support Documentation, Risk Monitoring & Follow-up Reports.",
-    tools: [
-      "Risk Management",
-      "Internal Audit",
-      "Risk Assessment",
-      "Compliance Management",
-    ],
-    images: [
-      "assets/images/projects/project-4-1.jpg",
-      "assets/images/projects/project-4-2.jpg",
     ],
   },
 };
