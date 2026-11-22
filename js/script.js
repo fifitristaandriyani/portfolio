@@ -644,6 +644,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Live Scrolling Active Navigation Menu Highlighting Engine
   const targetSections = document.querySelectorAll("section[id]");
+  const scrollTopBtn = document.getElementById("scroll-top-btn");
+
   window.addEventListener("scroll", () => {
     let currentId = "";
     const scrollPositionOffset = window.scrollY + 170;
@@ -663,5 +665,15 @@ document.addEventListener("DOMContentLoaded", () => {
         link.classList.add("active");
       }
     });
+
+    if (scrollTopBtn) {
+      scrollTopBtn.classList.toggle("visible", window.scrollY > 400);
+    }
   });
+
+  if (scrollTopBtn) {
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
