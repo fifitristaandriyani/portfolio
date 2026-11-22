@@ -350,7 +350,8 @@ const activityDatabase = {
       "Action Tracking",
       "Cross-functional Coordination",
     ],
-    image: "",
+    image: "assets/images/activities/activity-dms-thumb.jpeg",
+    images: ["assets/images/activities/activity-dms-1.png"],
   },
   act2: {
     title: "Monthly Operating Review (MOR)",
@@ -406,7 +407,12 @@ const activityDatabase = {
       "Improvement Management",
       "Presentation Skills",
     ],
-    image: "",
+    image: "assets/images/activities/activity-tpm-thumb.jpeg",
+    images: [
+      "assets/images/activities/activity-tpm-1.jpeg",
+      "assets/images/activities/activity-tpm-2.jpeg",
+      "assets/images/activities/activity-tpm-3.jpeg",
+    ],
   },
   act7: {
     title: "Monthly Improvement Review & Facilitator Coordination",
@@ -420,7 +426,11 @@ const activityDatabase = {
       "Cost Saving Analysis",
       "Meeting Facilitation",
     ],
-    image: "",
+    image: "assets/images/activities/activity-facil-thumb.png",
+    images: [
+      "assets/images/activities/activity-facil-1.png",
+      "assets/images/activities/activity-facil-2.jpeg",
+    ],
   },
   act6: {
     title: "Employee Engagement & Training Programs",
@@ -448,13 +458,20 @@ const activityDatabase = {
       "Scenario Analysis",
       "Capacity Planning",
     ],
-    image: "",
+    image: "assets/images/activities/activity-training-thumb.jpeg",
+    images: [
+      "assets/images/activities/activity-training-1.jpeg",
+      "assets/images/activities/activity-training-2.png",
+      "assets/images/activities/activity-training-3.png",
+    ],
   },
 };
 
 // ==================== STATE ENGINE VARIABLES ====================
 let pmIndex = 0;
 let pmSize = 0;
+let amIndex = 0;
+let amSize = 0;
 
 function openEngineModal(type, targetId) {
   if (type === "project") {
@@ -502,9 +519,6 @@ function openEngineModal(type, targetId) {
     document.getElementById("am-title").innerText = data.title;
     document.getElementById("am-purpose").innerText = data.purpose;
     document.getElementById("am-role").innerText = data.role;
-    document.getElementById("am-hero-img").style.backgroundImage = data.image
-      ? `url('${data.image}')`
-      : "none";
 
     const skillsDiv = document.getElementById("am-skills");
     skillsDiv.innerHTML = "";
@@ -514,6 +528,33 @@ function openEngineModal(type, targetId) {
       span.innerText = skill;
       skillsDiv.appendChild(span);
     });
+
+    const slides =
+      data.images && data.images.length
+        ? data.images
+        : data.image
+          ? [data.image]
+          : [];
+
+    const track = document.getElementById("am-wrapper");
+    track.innerHTML = "";
+    slides.forEach((src) => {
+      const slide = document.createElement("div");
+      slide.className = "carousel-slide-item";
+      slide.style.backgroundImage = `url('${src}')`;
+      track.appendChild(slide);
+    });
+
+    amIndex = 0;
+    amSize = slides.length;
+    shiftActivityCarousel(0);
+
+    const showNav = amSize > 1;
+    document
+      .querySelectorAll("#activity-modal .carousel-nav-btn")
+      .forEach((btn) => {
+        btn.style.display = showNav ? "" : "none";
+      });
 
     document.getElementById("activity-modal").style.display = "flex";
   }
@@ -525,6 +566,18 @@ function shiftActiveCarousel(step) {
   if (pmIndex < 0) pmIndex = pmSize - 1;
   document.getElementById("pm-wrapper").style.transform =
     `translateX(-${pmIndex * 100}%)`;
+}
+
+function shiftActivityCarousel(step) {
+  if (!amSize) {
+    document.getElementById("am-wrapper").style.transform = "translateX(0)";
+    return;
+  }
+  amIndex += step;
+  if (amIndex >= amSize) amIndex = 0;
+  if (amIndex < 0) amIndex = amSize - 1;
+  document.getElementById("am-wrapper").style.transform =
+    `translateX(-${amIndex * 100}%)`;
 }
 
 function closeEngineModal(modalId) {

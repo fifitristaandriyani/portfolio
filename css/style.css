@@ -949,14 +949,8 @@ body {
   color: var(--text-white);
 }
 
-.activity-modal-hero-img {
-  width: 100%;
-  height: 240px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  margin-bottom: 25px;
-  border: 1px solid var(--glass-border);
+.activity-carousel {
+  height: 260px;
 }
 
 .modal-desc-text {
