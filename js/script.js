@@ -216,8 +216,9 @@ const projectDatabase = {
       "Employee Engagement",
     ],
     images: [
-      "assets/images/projects/project-pandawa-award-1.jpg",
-      "assets/images/projects/project-pandawa-award-2.jpg",
+      "assets/images/projects/project-5-1.jpg",
+      "assets/images/projects/project-5-2.jpg",
+      "assets/images/projects/project-5-thumb-2.jpeg",
     ],
   },
   proj1: {
@@ -308,31 +309,6 @@ const projectDatabase = {
     images: [
       "assets/images/projects/project-4-1.jpg",
       "assets/images/projects/project-4-2.jpg",
-    ],
-  },
-  proj5: {
-    title: "Pandawa Continuous Improvement Challenge",
-    contributions: [
-      "Developed the master program framework, scoring rules, and performance assessment criteria for individual and group contributions.",
-      "Created data-driven KPI and System Flow Diagram (SFD) simulations to help plant floor teams understand performance targets.",
-      "Designed and managed monthly continuous improvement trivia campaigns via corporate channels to build workforce knowledge.",
-      "Monitored ongoing performance metrics and maintained the master annual participant ranking systems used for evaluations.",
-      "Managed employee engagement initiatives using the program's official WhatsApp Channel to increase active suggestions.",
-      "Coordinated the final execution logistics for the annual corporate recognition and awarding ceremonies.",
-    ],
-    outcomes:
-      "CI Scoring System, Assessment Criteria Framework, KPI & SFD Simulation Materials, Monthly Trivia Program, Annual Awarding System, Employee Engagement Dashboard.",
-    tools: [
-      "Continuous Improvement",
-      "Program Development",
-      "Employee Engagement",
-      "Performance Measurement",
-      "Internal Communication",
-      "Change Management",
-    ],
-    images: [
-      "assets/images/projects/project-5-1.jpg",
-      "assets/images/projects/project-5-2.jpg",
     ],
   },
 };
