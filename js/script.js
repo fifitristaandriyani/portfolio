@@ -8,6 +8,11 @@ const ROUTING_VARIABLES = {
   },
   certificates: [
     {
+      title: "Risk Management Development Program",
+      year: "2026",
+      path: "assets/images/certificates/cert-14.png",
+    },
+    {
       title: "OD and TA Intern Completion",
       year: "2025",
       path: "assets/images/certificates/cert-1.jpg",
@@ -49,6 +54,13 @@ const ROUTING_VARIABLES = {
     },
   ],
   achievements: [
+    {
+      id: "ach5",
+      title: "2nd Place World Milk Day Quiz Bowl Competition 2026",
+      group: "World Milk Day",
+      text: "Led a team to secure 2nd place in a manufacturing knowledge competition covering supply chain, plant operations, manufacturing processes, quality, and food safety, competing against more experienced employees.",
+      path: "assets/images/certificates/cert-13.jpg",
+    },
     {
       id: "ach1",
       title: "TOEFL ITP 573",
@@ -644,7 +656,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Live Scrolling Active Navigation Menu Highlighting Engine
   const targetSections = document.querySelectorAll("section[id]");
-  const scrollTopBtn = document.getElementById("scroll-top-btn");
+  const scrollNavBtn = document.getElementById("scroll-nav-btn");
+  const scrollNavIcon = scrollNavBtn
+    ? scrollNavBtn.querySelector("i")
+    : null;
+
+  function updateScrollNavBtn() {
+    if (!scrollNavBtn || !scrollNavIcon) return;
+
+    const scrollY = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight;
+    const viewHeight = window.innerHeight;
+    const canScroll = docHeight > viewHeight + 80;
+    const nearTop = scrollY < 280;
+    const direction = nearTop ? "down" : "up";
+
+    scrollNavBtn.classList.toggle("visible", canScroll);
+    scrollNavBtn.dataset.direction = direction;
+
+    if (direction === "down") {
+      scrollNavIcon.className = "fas fa-arrow-down";
+      scrollNavBtn.setAttribute("aria-label", "Scroll to bottom");
+      scrollNavBtn.title = "Go to bottom";
+    } else {
+      scrollNavIcon.className = "fas fa-arrow-up";
+      scrollNavBtn.setAttribute("aria-label", "Scroll to top");
+      scrollNavBtn.title = "Back to top";
+    }
+  }
 
   window.addEventListener("scroll", () => {
     let currentId = "";
@@ -666,14 +705,17 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    if (scrollTopBtn) {
-      scrollTopBtn.classList.toggle("visible", window.scrollY > 400);
-    }
+    updateScrollNavBtn();
   });
 
-  if (scrollTopBtn) {
-    scrollTopBtn.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+  if (scrollNavBtn) {
+    scrollNavBtn.addEventListener("click", () => {
+      const goDown = scrollNavBtn.dataset.direction === "down";
+      window.scrollTo({
+        top: goDown ? document.documentElement.scrollHeight : 0,
+        behavior: "smooth",
+      });
     });
+    updateScrollNavBtn();
   }
 });

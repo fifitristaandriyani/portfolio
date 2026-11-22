@@ -1010,7 +1010,7 @@ body {
   font-size: 0.85rem;
 }
 
-.scroll-top-btn {
+.scroll-nav-btn {
   position: fixed;
   right: 24px;
   bottom: 24px;
@@ -1033,19 +1033,19 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
-.scroll-top-btn.visible {
+.scroll-nav-btn.visible {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
 }
 
-.scroll-top-btn:hover {
+.scroll-nav-btn:hover {
   border-color: var(--accent-blue);
   color: var(--accent-blue);
 }
 
-.scroll-top-btn i {
+.scroll-nav-btn i {
   font-size: 0.95rem;
 }
 
