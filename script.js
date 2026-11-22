@@ -329,67 +329,86 @@ const activityDatabase = {
   act1: {
     title: "Daily Management System (DMS)",
     purpose:
-      "Facilitate routine performance monitoring and issue escalation to ensure timely corrective actions.",
-    role: "Acted as moderator and coordinator during DMS sessions, facilitated discussions, documented key issues, and followed up action plans with related departments.",
+      "Drive routine performance reviews and issue resolution through structured discussions, clear ownership, and timely follow-up.",
+    role: "As Daily Management System Lead, led Tuesday sessions to consolidate new operational issues and Thursday reviews to monitor OOEE performance, breakdowns, and ongoing issues. Moderated discussions to clarify issues, align issue raisers with action owners, and establish corrective action commitments. Documented Minutes of Meeting (MoM), monitored action progress, and followed up with departments to ensure timely issue closure.",
     skills: [
-      "Facilitation",
-      "Problem Solving",
-      "Issue Management",
-      "Stakeholder Coordination",
+      "Meeting Facilitation",
+      "Performance Monitoring",
+      "Issue Resolution",
+      "Action Tracking",
+      "Cross-functional Coordination",
     ],
-    image: "assets/images/activities/activity-1.jpeg",
+    image: "",
   },
   act2: {
     title: "Monthly Operating Review (MOR)",
     purpose:
-      "Review monthly KPI achievement, operational performance, and improvement progress across departments.",
-    role: "Prepared performance reports, served as moderator and presenter for the division, and monitored follow-up actions from management discussions.",
+      "Review overall plant KPI performance, identify performance gaps, and align improvement priorities with management.",
+    role: "As Performance Management Coordinator, prepared and presented overall plant KPI reports, including performance achievements, deviations, and gap analysis to Managers and Supervisors. Moderated management review discussions, translating performance gaps into key insights and improvement priorities. Documented meeting outcomes and coordinated action follow-ups with responsible PICs to ensure timely progress.",
     skills: [
       "Performance Analysis",
-      "Executive Reporting",
-      "Presentation Skills",
-      "KPI Management",
+      "Gap Analysis",
+      "Management Reporting",
+      "Meeting Facilitation",
+      "Action Tracking",
     ],
     image: "assets/images/activities/activity-2.jpeg",
   },
   act3: {
     title: "Yearly Operating Review (YOR)",
     purpose:
-      "Evaluate annual business performance and align improvement priorities and operational plans for the following year.",
-    role: "Compiled annual performance summaries, facilitated review discussions, documented key decisions, and supported future planning alignment.",
+      "Evaluate annual plant performance, review improvement achievements, and align strategic priorities and programs for the following year.",
+    role: "As Annual Performance Review Coordinator, designed the YOR event concept, evaluation agenda, and key review activities. Prepared annual performance summaries and facilitated discussions on achievements, gaps, and improvement strategies. Presented proposed improvement programs and priorities for the following year, documenting key decisions and alignment.",
     skills: [
+      "Annual Performance Review",
       "Strategic Planning",
-      "Business Review",
-      "Reporting",
-      "Stakeholder Management",
+      "Program Development",
+      "Management Reporting",
+      "Stakeholder Coordination",
     ],
     image: "assets/images/activities/activity-3.jpeg",
   },
   act4: {
     title: "Gemba Observation & Improvement Program",
     purpose:
-      "Capture bottom-up insights from shopfloor operations to identify recurring issues and improvement opportunities.",
-    role: "Conducted operator interviews, gathered operational observations, analyzed findings, and proposed improvement interventions based on identified patterns.",
+      "Identify shopfloor gaps and improvement opportunities through workplace observations, AM audits, and operator feedback.",
+    role: "As Operational Improvement Coordinator, conducted Gemba 5P and Autonomous Maintenance audits to identify workplace condition gaps and operational abnormalities. Analyzed audit findings to identify recurring issues and improvement opportunities. Gathered operator feedback through surveys to develop bottom-up improvement initiatives based on actual shopfloor needs.",
     skills: [
-      "Root Cause Analysis",
-      "Operational Analysis",
-      "Communication",
+      "Gemba Observation",
+      "5P Audit",
+      "Autonomous Maintenance",
+      "Gap Analysis",
+      "Employee Engagement",
       "Continuous Improvement",
     ],
     image: "assets/images/activities/activity-4.jpeg",
   },
   act5: {
-    title: "TPM Quick Win Activities",
+    title: "TPM (Total Productive Maintenance) Quick Win Presentation",
     purpose:
-      "Drive TPM implementation through practical improvement initiatives and measurable operational improvements.",
-    role: "Monitored project progress, presented improvement outcomes, and coordinated implementation follow-ups with pipeline teams.",
+      "Promote plant-level improvement initiatives through TPM Quick Win presentations, showcasing solutions to key operational challenges.",
+    role: "As Focused Improvement Representative & Quick Win Presenter, monitored project progress, presented improvement outcomes, and coordinated implementation follow-ups with pipeline teams.",
     skills: [
       "TPM",
       "Project Coordination",
       "Improvement Management",
       "Presentation Skills",
     ],
-    image: "assets/images/activities/activity-5.jpeg",
+    image: "",
+  },
+  act7: {
+    title: "Monthly Improvement Review & Facilitator Coordination",
+    purpose:
+      "Drive bottom-up improvement initiatives through regular facilitator coordination, project monitoring, and strategic improvement reviews.",
+    role: "As Improvement Review Coordinator, coordinated departmental facilitators (Supervisors) to monitor bottom-up initiatives and provide feedback on the Pandawa program. Reviewed improvement project progress, cost-saving achievements, and Focused Improvement initiatives. Facilitated discussions on improvement strategies and competition opportunities at manufacturing, corporate, national, and international levels.",
+    skills: [
+      "Facilitator Coordination",
+      "Continuous Improvement",
+      "Project Monitoring",
+      "Cost Saving Analysis",
+      "Meeting Facilitation",
+    ],
+    image: "",
   },
   act6: {
     title: "Employee Engagement & Training Programs",
@@ -403,6 +422,21 @@ const activityDatabase = {
       "Presentation Skills",
     ],
     image: "assets/images/activities/activity-6.jpg",
+  },
+  act8: {
+    title: "Training & Professional Development",
+    purpose:
+      "Strengthen professional capabilities through structured learning programs in risk management and system dynamics.",
+    role: "Completed the Risk Management Development Program (RMDP) through Kalbe Cendekia Learning Course (2026), covering Enterprise Risk Management for risk identification, assessment, and mitigation. Completed a four-month System Dynamics Intensive Training & Workshop as Team Lead, developing a Vensim-based plant operational simulation model and evaluating production capacity strategies involving product grammage adjustments and recruitment to assess impacts on fulfillment, overtime, and conversion cost.",
+    skills: [
+      "Enterprise Risk Management",
+      "Risk Assessment",
+      "System Dynamics",
+      "Vensim",
+      "Scenario Analysis",
+      "Capacity Planning",
+    ],
+    image: "",
   },
 };
 
@@ -456,8 +490,9 @@ function openEngineModal(type, targetId) {
     document.getElementById("am-title").innerText = data.title;
     document.getElementById("am-purpose").innerText = data.purpose;
     document.getElementById("am-role").innerText = data.role;
-    document.getElementById("am-hero-img").style.backgroundImage =
-      `url('${data.image}')`;
+    document.getElementById("am-hero-img").style.backgroundImage = data.image
+      ? `url('${data.image}')`
+      : "none";
 
     const skillsDiv = document.getElementById("am-skills");
     skillsDiv.innerHTML = "";
@@ -567,13 +602,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Intersection Observer Engine for scroll-reveal animations
-  const observerOptions = { threshold: 0.05, rootMargin: "0px 0px -20px 0px" };
+  const staggerSelector = [
+    ".project-card",
+    ".activity-card",
+    ".timeline-block",
+    ".skill-pill-card",
+    ".tool-premium-card",
+    ".gallery-card",
+    ".about-info-cards > .glass-card",
+  ].join(", ");
+
+  const observerOptions = {
+    threshold: 0.08,
+    rootMargin: "0px 0px -48px 0px",
+  };
   const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("appear");
-        observer.unobserve(entry.target);
-      }
+      if (!entry.isIntersecting) return;
+
+      const el = entry.target;
+      const children = el.querySelectorAll(staggerSelector);
+
+      children.forEach((child, i) => {
+        child.classList.add("reveal-child");
+        child.style.setProperty("--reveal-delay", `${0.08 + i * 0.07}s`);
+      });
+
+      el.classList.add("appear");
+
+      requestAnimationFrame(() => {
+        children.forEach((child) => child.classList.add("appear"));
+      });
+
+      observer.unobserve(el);
     });
   }, observerOptions);
 
