@@ -361,6 +361,10 @@ let pmIndex = 0;
 let pmSize = 0;
 let amIndex = 0;
 let amSize = 0;
+let pmImages = [];
+let amImages = [];
+let pmZoomTitle = "Project Image";
+let amZoomTitle = "Activity Image";
 
 function openEngineModal(type, targetId) {
   if (type === "project") {
@@ -369,6 +373,7 @@ function openEngineModal(type, targetId) {
 
     document.getElementById("pm-title").innerText = data.title;
     document.getElementById("pm-outcomes").innerText = data.outcomes;
+    pmZoomTitle = data.title;
 
     const contributionsUl = document.getElementById("pm-contributions");
     contributionsUl.innerHTML = "";
@@ -389,16 +394,22 @@ function openEngineModal(type, targetId) {
 
     const track = document.getElementById("pm-wrapper");
     track.innerHTML = "";
-    data.images.forEach((src) => {
+    pmImages = data.images || [];
+    pmImages.forEach((src) => {
       const slide = document.createElement("div");
       slide.className = "carousel-slide-item";
       slide.style.backgroundImage = `url('${src}')`;
+      slide.dataset.src = src;
       track.appendChild(slide);
     });
 
     pmIndex = 0;
-    pmSize = data.images.length;
+    pmSize = pmImages.length;
     shiftActiveCarousel(0);
+
+    const showZoom = pmSize > 0;
+    const zoomBtn = document.querySelector("#project-modal .carousel-zoom-btn");
+    if (zoomBtn) zoomBtn.style.display = showZoom ? "" : "none";
 
     document.getElementById("project-modal").style.display = "flex";
   } else if (type === "activity") {
@@ -408,6 +419,7 @@ function openEngineModal(type, targetId) {
     document.getElementById("am-title").innerText = data.title;
     document.getElementById("am-purpose").innerText = data.purpose;
     document.getElementById("am-role").innerText = data.role;
+    amZoomTitle = data.title;
 
     const skillsDiv = document.getElementById("am-skills");
     skillsDiv.innerHTML = "";
@@ -427,10 +439,12 @@ function openEngineModal(type, targetId) {
 
     const track = document.getElementById("am-wrapper");
     track.innerHTML = "";
+    amImages = slides;
     slides.forEach((src) => {
       const slide = document.createElement("div");
       slide.className = "carousel-slide-item";
       slide.style.backgroundImage = `url('${src}')`;
+      slide.dataset.src = src;
       track.appendChild(slide);
     });
 
@@ -445,8 +459,22 @@ function openEngineModal(type, targetId) {
         btn.style.display = showNav ? "" : "none";
       });
 
+    const zoomBtn = document.querySelector("#activity-modal .carousel-zoom-btn");
+    if (zoomBtn) zoomBtn.style.display = amSize > 0 ? "" : "none";
+
     document.getElementById("activity-modal").style.display = "flex";
   }
+}
+
+function openCarouselZoom(type) {
+  const src =
+    type === "project" ? pmImages[pmIndex] : amImages[amIndex];
+  if (!src) return;
+
+  document.getElementById("zim-title").innerText =
+    type === "project" ? pmZoomTitle : amZoomTitle;
+  document.getElementById("zim-img").src = src;
+  document.getElementById("view-image-modal").style.display = "flex";
 }
 
 function shiftActiveCarousel(step) {
