@@ -111,7 +111,7 @@ const projectDatabase = {
       "Data Analytics",
     ],
     images: [
-      "assets/images/projects/project-omega-1.png",
+      "assets/images/projects/project-omega-thumb.png",
       "assets/images/projects/project-omega-2.png",
       "assets/images/projects/project-omega-3.png",
     ],
