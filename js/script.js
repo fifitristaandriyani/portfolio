@@ -175,9 +175,8 @@ const projectDatabase = {
     ],
     images: [
       "assets/images/projects/project-shpway-1.png",
+      "assets/images/projects/project-shpway-thumb.png",
       "assets/images/projects/project-shpway-2.jpeg",
-      "assets/images/projects/project-shpway-3.png",
-      "assets/images/projects/project-shpway-4.png",
     ],
   },
   projErmPlant: {
