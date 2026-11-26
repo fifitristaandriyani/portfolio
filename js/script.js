@@ -257,7 +257,11 @@ const activityDatabase = {
       "Meeting Facilitation",
       "Action Tracking",
     ],
-    image: "assets/images/activities/activity-2.jpeg",
+    images: [
+      "assets/images/activities/activity-2a.jpeg",
+      "assets/images/activities/activity-2b.png",
+      "assets/images/activities/activity-2c.jpeg",
+    ],
   },
   act3: {
     title: "Yearly Operating Review (YOR)",
